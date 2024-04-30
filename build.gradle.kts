@@ -76,11 +76,11 @@ dependencies {
     modImplementation(libs.fabric.kotlin)
 
     // Database
-    shadow(libs.exposed.core)
-    shadow(libs.exposed.dao)
-    shadow(libs.exposed.jdbc)
-    shadow(libs.exposed.java.time)
-    shadow(libs.sqlite.jdbc)
+    modImplementationAndInclude(libs.exposed.core)
+    modImplementationAndInclude(libs.exposed.dao)
+    modImplementationAndInclude(libs.exposed.jdbc)
+    modImplementationAndInclude(libs.exposed.java.time)
+    modImplementationAndInclude(libs.sqlite.jdbc)
 
     // Config
     shadow(libs.konf.core)
